@@ -15,9 +15,15 @@ let searchResults = document.querySelector('#search-results')
 
 searchButton.addEventListener('click', function () {
 
-if (sentence.innerText.includes(textBox.value)){
-  searchResults.innerText = ('A match was found!!!')}
-  else { searchResults.innerText = ('No match was found!!!')}
+if (sentence.innerText.toLowerCase().includes(textBox.value.trim().toLowerCase())){
+
+ 
+searchResults.innerText = ('A match was found!!!')}
+
+  else { searchResults.innerText = ('No match was found!!!')
+ 
+}
+  
   
 
     
