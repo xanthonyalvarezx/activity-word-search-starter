@@ -23,7 +23,16 @@ searchResults.innerText = ('A match was found!!!')}
   else { searchResults.innerText = ('No match was found!!!')
  
 }
-  
+
+ 
+//string = string but .replace new regular expression is the textbox value (gobal and insensative) match function match string but mark /highlight string.
+sentence.innerHTML = sentence.innerHTML.replace(new RegExp(textBox.value, "gi"), (match) => `<mark>${match}</mark>`);
+
+
+
+
+
+
   
 
     
